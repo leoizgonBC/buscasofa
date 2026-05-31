@@ -9,8 +9,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cypress:open": "npx cypress open",
-    "cypress:run": "npx cypress run",
+    "postinstall": "cypress install",
+    "cypress:install": "cypress install",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

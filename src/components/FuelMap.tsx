@@ -100,6 +100,7 @@ function FuelMap({ stations }) {
           />
         </div>
       </div>
+      <p data-cy="map-station-count">{filteredStations.length} estaciones</p>
       <MapContainer center={userLocation} zoom={14} style={{ height: '80vh', width: '100%' }}>
         <TileLayer
           // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
